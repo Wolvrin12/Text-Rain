@@ -53,8 +53,7 @@ body {
   height: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff;
+  /* text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff; */
   transform-origin: bottom;
   animation: raining 2s linear forwards;
 }
