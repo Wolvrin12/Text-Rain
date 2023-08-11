@@ -47,7 +47,7 @@ body {
   box-shadow: 90px 0 0 30px #fff;
 }
 
-.text {
+.letter {
   position: absolute;
   top: 40px;
   height: 20px;
@@ -56,10 +56,10 @@ body {
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff;
   transform-origin: bottom;
-  animation: animate 2s linear forwards;
+  animation: raining 2s linear forwards;
 }
 
-@keyframes animate {
+@keyframes raining {
   0% {
     transform: translateY(0) scale(1);
   }

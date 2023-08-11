@@ -3,21 +3,17 @@ const cloud = document.querySelector(".cloud");
 const randomText = () => {
   const text =
     "absdefghklmnopqrstuvwxyz0123456789&é'(-è_à)=+-*/?.§%µ¨£¨¤~~#{[|`^@}";
-  const letter = text[Math.floor(Math.random() * text.length)];
-  return letter;
+  return text[Math.floor(Math.random() * text.length)];
 };
 
 const rain = () => {
   let e = document.createElement("div");
-  let left = Math.floor(Math.random() * 310);
-  let size = Math.random() * 1.5;
-  let duration = Math.random() * 1;
-  e.classList.add("text");
+  e.classList.add("letter");
   cloud.appendChild(e);
   e.innerText = randomText();
-  e.style.left = left + "px";
-  e.style.fontSize = 0.5 + size + "em";
-  e.style.animationDuration = 1 + duration + "s";
+  e.style.left = Math.floor(Math.random() * 310) + "px";
+  e.style.fontSize = 0.5 + Math.random() * 1.5 + "em";
+  e.style.animationDuration = 1 + Math.random() * 1 + "s";
 
   setTimeout(() => {
     cloud.removeChild(e);
