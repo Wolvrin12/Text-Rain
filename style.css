@@ -26,13 +26,18 @@ body {
 
 .cloud {
   position: relative;
-  top: 50px;
+  top: 40px;
   width: 320px;
   height: 100px;
   background: #fff;
   border-radius: 100px;
   z-index: 100;
   filter: drop-shadow(0 0 35px #fff);
+}
+
+.cloud:nth-child(2) {
+  position: absolute;
+  top: 25%;
 }
 
 .cloud::before {
@@ -49,11 +54,11 @@ body {
 
 .letter {
   position: absolute;
+  z-index: 50;
   top: 40px;
   height: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  /* text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff; */
   transform-origin: bottom;
   animation: raining 2s linear forwards;
 }
